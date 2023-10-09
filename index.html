@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en" theme="White">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Me, Myself.</title>
+  <meta property="og:title" content="김태경[金泰京, Terrius]">
+  <meta name="description" content="Terrius moment">
+  <meta property="og:description" content="The One Above All">
+  <meta property="og:image" content="https://media.tenor.com/H549T-Zxtg0AAAAd/anime-aesthetic.gif">
+  <meta name="twitter:card" content="summary">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9b00bb">
+  <link href="https://images.unsplash.com/photo-1592728833619-eb0b125ec069?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" rel="shortcut icon" type="image/x-icon">
+  <meta name="twitter:card" content="summary">
+  <link rel="preload" href="https://dword.xyz/files/app.css" as="style">
+  <link rel="stylesheet" href="https://dword.xyz/files/main.css">
+  <link href="https://dword.xyz/files/remixicon.css" rel="stylesheet">
+  <link href="https://dword.xyz/files/animate.css" rel="stylesheet">
+  <script defer="" referrerpolicy="origin" src="https://dword.xyz/files/contents.js"></script>
+  <script src="https://dword.xyz/files/jquery.min.js"></script>
+  <link href="https://dword.xyz/files/animate.css" rel="stylesheet">
+  <script src="https://dword.xyz/files/script.js" data-site="IHGLANPG" defer=""></script>
+  <script nonce="244b1172-ad32-4fb4-be48-8dafadf71f6b">
+    (function (w, d) {
+      ! function (f, g, h, i) {
+        f[h] = f[h] || {};
+        f[h].executed = [];
+        f.zaraz = {
+          deferred: [],
+          listeners: []
+        };
+        f.zaraz.q = [];
+        f.zaraz._f = function (j) {
+          return function () {
+            var k = Array.prototype.slice.call(arguments);
+            f.zaraz.q.push({
+              m: j,
+              a: k
+            })
+          }
+        };
+        for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l);
+        f.zaraz.init = () => {
+          var m = g.getElementsByTagName(i)[0],
+            n = g.createElement(i),
+            o = g.getElementsByTagName("title")[0];
+          o && (f[h].t = g.getElementsByTagName("title")[0].text);
+          f[h].x = Math.random();
+          f[h].w = f.screen.width;
+          f[h].h = f.screen.height;
+          f[h].j = f.innerHeight;
+          f[h].e = f.innerWidth;
+          f[h].l = f.location.href;
+          f[h].r = g.referrer;
+          f[h].k = f.screen.colorDepth;
+          f[h].n = g.characterSet;
+          f[h].o = (new Date).getTimezoneOffset();
+          if (f.dataLayer)
+            for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({
+                ...t[1],
+                ...u[1]
+              }))))) zaraz.set(s[0], s[1], {
+              scope: "page"
+            });
+          f[h].q = [];
+          for (; f.zaraz.q.length;) {
+            const v = f.zaraz.q.shift();
+            f[h].q.push(v)
+          }
+          n.defer = !0;
+          for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y.startsWith(
+            "_zaraz_"))).forEach((x => {
+            try {
+              f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x))
+            } catch {
+              f[h]["z_" + x.slice(7)] = w.getItem(x)
+            }
+          }));
+          n.referrerPolicy = "origin";
+          n.src = "https://dword.xyz/ventryshield/contents.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h])));
+          m.parentNode.insertBefore(n, m)
+        };
+        ["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener("DOMContentLoaded",
+          zaraz.init)
+      }(w, d, "zarazData", "script");
+    })(window, document);
+  </script>
+  <script>
+    ((() => {
+      const origOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function () {
+        this.addEventListener('load', function () {
+          if (this.getResponseHeader("ventryshield-rq") && this.getResponseHeader("ventryshield-rq") ===
+            "igcacnstr") {
+            window.location.reload();
+          }
+        });
+        origOpen.apply(this, arguments);
+      };
+    }))();
+  </script>
+  <script>
+    const {
+      fetch: originalFetch
+    } = window;
+    window.fetch = async (...args) => {
+      let [resource, config] = args;
+      const response = await originalFetch(resource, config);
+      if (response.headers.get("ventryshield-rq") && response.headers.get("ventryshield-rq") === "igcacnstr") {
+        window.location.reload();
+      }
+      return response;
+    };
+  </script>
+</head>
+
+<body class="chedrip" cz-shortcut-listen="false">
+  <script>
+    var TxtType = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = "";
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) {
+        delta /= 2;
+      }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === "") {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName("typewrite");
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute("data-type");
+        var period = elements[i].getAttribute("data-period");
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+    };
+  </script>
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    })
+
+    document.onkeypress = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+    }
+    document.onmousedown = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+    }
+    document.onkeydown = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && event.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+    }
+  </script>
+  <div class="fixed w-full h-full">
+    <video id="backgroundVideo" style="object-fit: fill; height: 125%; width: 100%; filter:brightness(50%)" muted
+      loop="" hidden="hidden">
+      <source src="https://media.tenor.com/Xlq2A0pmC3sAAAPo/anime-night.mp4"
+        type="video/mp4">
+    </video>
+  </div>
+  <style>
+    .click_anywhere {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <div class="clickanywhere premium_border">
+    <div class="click_body" style="height:100%;width:100%;">
+      <div class="click_anywhere">
+        <h4 style="color:rgb(105, 16, 0);font-size:12pt;">[Loading...]</h4>
+      </div>
+		<audio loop volume="0.5">
+		  <source src="https://cdn.discordapp.com/attachments/1123079087875952742/1160966235593375824/SpotifyMate.com_-_Rainy_Days_-_V.mp3?ex=65369510&is=65242010&hm=9505dfc271cc33d9eeb16a2de4b6a2431bccad584010a0a6ba11f9fdd15e9054&" loop type="audio/mpeg">
+		  <source src="https://dword.xyz/files/Lil Uzi Vert - Brah Watch This (Pluggnb Remix).ogg" loop type="audio/ogg">
+		</audio>
+      <div id="sounddiv">
+        <bgsound id="sound">
+      </div>
+    </div>
+  </div>
+  <div class="biolink" style="display:none;height:100%;width:100%;">
+    <div class="relative w-full h-full px-4 py-16 table">
+      <div class="table-cell align-middle text-center">
+        <div
+          class="bg-main rounded-md shadow-4xl w-full mx-auto card animate-slide-up not-last-child:mb-12 max-w-[1100px] mt-14">
+          <div class="p-10">
+            <div class="not-last-child:mb-8">
+              <div class="-mt-[85px]">
+                <img class="w-44 h-44 rounded-full mx-auto shadow-avatar" src="https://media.discordapp.net/attachments/1123079087875952742/1160949623196758057/IMG_20200219_134538_409.jpg?ex=65368597&is=65241097&hm=679308f907ed669a4c945dda8d994605517b04687b9ad556ddef3e702b25587e&=&width=605&height=605"
+                  title="Image" alt="Image" draggable="false"> </div>
+            </div>
+            <div class="not-last-child:mb-8">
+              <div class="flex justify-center items-center space-x-2">
+                <h2 class="text-[20px] text-white font-semibold"
+                  style="color: #ffffff; background-image: url();filter: drop-shadow(8px 8px 10px #ff2222);color:#ff2222;">
+                  김태경[金泰京, Terrius]</h2>
+                <span class="cursor-pointer text-xl" title="Verified">
+                  <div class="Verified"><img src="https://i.ibb.co/xMmRCnz/clipart4801090.png"
+                      class="verified-icon-image verified-icon-image-dark"
+                      style="position: absoulute; height: 15px; left: 60%;"></div>
+                </span>
+              </div>
+              <p class="text-sm">
+                @Terriusdev <br><br> As a twenty-six year old, Web+ Software+ developer, my primary goal is to create high-quality work that caters to both individual users and potential clients.<br>Additionally, I am dedicated to continuously expanding my skills and knowledge in this field.</br><br>
+
+</br>Programming has been my passion for the past 7+ years of my life,<br>and what I particularly enjoy about it is the endless possibilities it offers through the power of your imagination.</br></br></br>
+            </div>
+            <div class="not-last-child:mb-8">
+              <div class="mx-auto max-w-[750px]">
+                <p>
+                  <span class="typewrite" data-period="2000"
+                    data-type="[ &quot;https://github.com/Terriusdev&quot;]"><span
+                      class="wrap">Loading...</span></span>
+              </div>
+            </div>
+            <div class="flex justify-center items-center space-x-2">
+            </div>
+          </div>
+        </div>
+        <div align="center"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5ydjxBSUIDn26MFzU3asP4?utm_source=generator" width="33%" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="1w-full mx-auto card animate-slide-up not-last-child:mb-12 max-w-[1100px]">
+            <div class="!p-0">
+<div class="flex flex-wrap justify-between gap-6">
+                            <a href="https://instagram.com/terriusdev" target="_blank" rel="noopener noreferrer nofollow" title="https://instagram.com/terriusdev" class="bg-main rounded-xl flex-[100%] sm:flex-[45%] animate-slide-up shadow-4xl p-3 button" style="will-change: opacity, transform">
+                                <div class="flex items-center justify-between space-x-6">
+                                    <span class="bg-secondary rounded-xl aspect-square h-16 p-3 flex items-center justify-center">
+                                        <img class="drop-shadow-twitter" src="https://www.designbust.com/download/625/png/instagram_logo_transparent512.png">
+                                    </span>
+                                    <h2 class="w-full text-left text-grey">Instagram</h2>
+                                    <span class="w-20" style="margin-left: 157px;">
+                                        <img src="https://i.ibb.co/g4p7921/202-2026385-people-connection-png-for-kids-connect-icon-png.png" style="width: 40px;" class="link-arrows">
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+
+      <div class="1w-full mx-auto card animate-slide-up not-last-child:mb-12 max-w-[1100px]">
+        <div class="!p-0">
+          <div class="flex flex-wrap justify-between gap-6">
+                                   <a href="https://github.com/terriusdev" target="_blank" rel="noopener noreferrer nofollow" title="https://github.com/terriusdev" class="bg-main rounded-xl flex-[100%] sm:flex-[45%] animate-slide-up shadow-4xl p-3 button" style="will-change: opacity, transform">
+                            <div class="flex items-center justify-between space-x-6">
+                                <span class="bg-secondary rounded-xl aspect-square h-16 p-3 flex items-center justify-center">
+                                    <img class="drop-shadow-twitter" src="https://i.ibb.co/mvrBQyF/945b0225337909-563440870421b.png">
+                                </span>
+                                <h2 class="w-full text-left text-grey">Portfolio</h2>
+                                <span class="w-20" style="margin-left: 157px;">
+                                    <img src="https://i.ibb.co/g4p7921/202-2026385-people-connection-png-for-kids-connect-icon-png.png" style="width: 40px;" class="link-arrows">
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
+    <script src="https://dword.xyz/files/page.js"></script>
+    <script>
+      function playclip() {
+        if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7") != -1) || (
+            navigator.appVersion.indexOf("MSIE 8") != -1)) {
+          if (document.all) {
+            document.all.sound.src = "x";
+          }
+        } else {
+          {
+            var audio = document.getElementsByTagName("audio");
+
+            if (audio.length > 0) audio[0].play();
+
+            var video = document.getElementsByTagName("video");
+
+            if (video.length > 0) {
+              video = video[0];
+              video.removeAttribute('hidden');
+              video.play();
+            }
+          }
+        }
+      }
+
+      document.querySelector('.chedrip').addEventListener('click', function () {
+
+        playclip();
+      });
+
+      $(document).ready(function () {
+        $(document.body).click(function () {
+          $(".clickanywhere").fadeOut(1000);
+          $(".biolink").fadeIn(1000);
+
+          let play = function () {
+            document.getElementById("audio").play()
+          }
+
+
+
+
+        });
+      });
+
+      var _old = jQuery.Event.prototype.stopPropagation;
+
+      jQuery.Event.prototype.stopPropagation = function () {
+        this.target.nodeName !== 'SPAN' && _old.apply(this, arguments);
+      };
+    </script>
+    <script defer="" src="https://dword.xyz/files/vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon="{&quot;rayId&quot;:&quot;792fc0215c94953a&quot;,&quot;token&quot;:&quot;033c33a962e74d16be982c1223e03590&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}"
+      crossorigin="anonymous"></script>
+    <div>
+
+
+    </div>
+    <style type="text/css">
+      .typewrite>.wrap {
+        border-right: 0.08em solid #771616
+      }
+    </style>
+<script>(function(){var js = "window['__CF$cv$params']={r:'809d9f4d4f900115',t:'MTY5NTI1MDE3My4wMjgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='https://dword.xyz/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+
+</html>
